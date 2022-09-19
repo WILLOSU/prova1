@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tela de Cadastro</title>
+  <link rel="stylesheet" href="./styleCadastro.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+</head>
+<body>
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+
+<body>
+
+<div class='container'>
+  <div class='card'>
+    <h1> Cadastrar </h1>
+    
+    <div id='msgError'></div>
+    <div id='msgSuccess'></div>
+    
+            <div class="label-float">
+               <input type="text" id="nome" placeholder=" " required>
+               <label id="labelNome" for="nome">Nome completo</label>
+            </div>
+            
+            <div class="label-float">
+               <input type="text" id="usuario" placeholder=" " required>
+               <label id="labelUsuario" for="usuario">Usuário</label>
+            </div>
+            
+            <div class="label-float">
+               <input type="text" id="cpf" placeholder=" " required>
+               <label id="labelcpf" for="cpf">CPF</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="endereco" placeholder=" " required>
+               <label id="labelendereco" for="endereco">Endereço</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="nascimento" placeholder=" " required>
+               <label id="labelnascimento" for="nascimento">Data de Nascimento</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="renda" placeholder=" " required>
+               <label id="labelrenda" for="renda">Renda Mensal</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="profissao" placeholder=" " required>
+               <label id="labelprofissao" for="profissao">Profissão</label>
+            </div>
+
+
+            
+            <div class="label-float">
+               <input type="password" id="senha" placeholder=" " required>
+               <label id="labelSenha" for="senha">Senha</label>
+               <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+               
+            </div>
+
+            <div class="label-float">
+               <input type="password" id="confirmSenha" placeholder=" " required>
+               <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+               <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            
+            <div class='justify-center'>
+               <button onclick='cadastrar()'>Cadastrar</button>
+            </div>
+
+    
+  </div>
+  </div>
+</body>
+
+  <script  src="./scriptCadastro.js"></script>
+
+</body>
+</html>
