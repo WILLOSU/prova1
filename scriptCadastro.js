@@ -207,7 +207,7 @@ function  validarPrimeiroDigito (cpf)  {
   }
   const  resto  =  (soma * 10)  %  11 ;
   if  ( resto  < 10 )  {
-    return  cpf [9]  ==  resto ;// dígitio verificador na posição 9
+    return  cpf [9]  ==  resto ;// dígito verificador na posição 9
   }
   return  cpf  [9] ==  0; // se o cpf foi igual a zero 
 }
@@ -237,19 +237,22 @@ function  validarRepetido (cpf)  {
 
 function  validarCpf (cpf)  {
   if  (cpf.length !=  11)  {
-    return false;
+    alert("CPF INVÁLIDO!!!!.");
   }
-  if (!validarRepetido (cpf) )  {
-    return false;
+  else{ if(!validarRepetido (cpf) )  {
+    alert("CPF INVÁLIDO!!!!.");
   }
-  if  (!validarPrimeiroDigito (cpf)) {
-    return false;
+  else{ if (!validarPrimeiroDigito (cpf)) {
+    alert("CPF INVÁLIDO!!!!.");
   }
-  if  (! validarSegundoDigito (cpf)) {
-    return false;
-  }
-  return true;
-}
+  else{ if  (! validarSegundoDigito (cpf)) {
+    alert("CPF INVÁLIDO!!!!.");
+  } else{
+  alert("CPF VÁLIDO.");
+}}}}}
+
+
+
 
 /* Função que realiza algumas validações sobre a idade */
 function idadeValida(nascimento) {
